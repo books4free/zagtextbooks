@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freetextbooks</title>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      table {
+        margin: 20px;
+        padding: 20px;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      tr {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 20px;
+          }
+
+       td {
+        flex: 3;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+
+      img {
+        max-width: 75%;
+        height: auto;
+        display: block;
+        border: 0.1px solid #333;
+        margin: 0 auto; /* Center images within their container */
+      }
+
+      a {
+        display: block;
+        margin-top: 10px; /* Add margin between the image and the link */
+      }
+
+      a:hover {
+         font-size: 18px;
+         }
+
+      @media (max-width: 500px)  {
+      tr {
+        flex-direction: column;
+        align-items: center;
+        }
+      }
+
+      #hiddentext {
+            display: none;
+          }
+
+ </style>
+
+
+<body>
+  <table>
+    <tbody>
+      <tr>
+
+        <td>  <!-- bizlaw textbook -->
+          <img src="bizlaw.jpg" alt="image not found">  <!-- bizlaw textbook -->
+          <br><figcaption><em>Anderson's Business Law</em> for Donald Hackney's Class (busn 283)</figcaption>
+          <a href="http://www.bobfarley.us/0300lawclasses/315businesslaw/Books/Andersons%20Business%20Law.pdf" alt="textbook not available">Free PDF</a>
+        </td>
+
+          <td>
+              <img src="five.jpg" alt="image not found">  <!-- plato's five dialogues -->
+              <br><figcaption><em>Five Dialogues</em> by Plato for Braune's Philosophy 201</figcaption>
+              <a href="https://www.sas.upenn.edu/~cavitch/pdf-library/Plato_Apology.pdf" alt="link not available">Free PDF</a>
+          </td>
+
+          <td>
+              <img src="consolation.jpg" alt="image not found"> <!-- boethius' consolation of philosophy -->
+              <br><figcaption><em>Consolation of Philosophy </em> Boethius (philosophy 201)</figcaption>
+              <a href="https://www.exclassics.com/consol/consol.pdf" alt="link not available">Free PDF</a>
+          </td>
+
+
+      </tr>
+    </tbody>
+  </table>
+
+<table>
+    <tbody>
+        <tr>
+
+            <td>
+              <img src="meditation.jpg" alt="image not found">  <!-- meditations on first philosophy -->
+              <br><figcaption><em>Meditations on First Philosophy</em> by Rene Descartes (philosophy 201)</figcaption>
+              <a href="https://yale.learningu.org/download/041e9642-df02-4eed-a895-70e472df2ca4/H2665_Descartes%27%20Meditations.pdf" alt="link not available">Free PDF</a>
+            </td>
+
+            <td>
+                <img src="douglass.jpg" alt="image not found">  <!-- narrative of life of frederick douglass -->
+                <br><figcaption><em>Narrative of the Life of Frederick Douglass</em> by Frederick Douglass (philosophy 201)</figcaption>
+                <a href="https://www.ibiblio.org/ebooks/Douglass/Narrative/Douglass_Narrative.pdf" alt="link not available">Free PDF</a>
+            </td>
+
+            <td>
+                <img src="prisons.jpg" alt="image not found">
+                <br><figcaption><em>Are prisons Obsolete?</em> by Angela Y Davis (philosophy 201)</figcaption>
+                <a href="https://collectiveliberation.org/wp-content/uploads/2013/01/Are_Prisons_Obsolete_Angela_Davis.pdf" alt="link not available">Free PDF</a>
+
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+</body>
+    <!-- HTML button functionality -->
+    <script>
+        function showText() {
+            var hiddenText = document.getElementById("hiddenText");
+            if (hiddenText.style.display === "none") {
+                hiddenText.style.display = "block";
+            } else
+                hiddenText.style.display = "none";
+            }
+        }
+    </script>
+</html>
